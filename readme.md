@@ -1,4 +1,10 @@
-#To login to the app
+## Introduction for running the app
+1. Clone this repository.
+2. cd to the directory where run.py located.
+
+
+
+# To login to the app
 curl -k https://127.0.0.1:5000/login/github
 
 #To show the to-do list added
