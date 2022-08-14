@@ -43,7 +43,9 @@ curl -k https://127.0.0.1:5000/login/github
 ```
 ![image](https://user-images.githubusercontent.com/81457132/184542033-927b39bc-7c48-40e6-b74f-7988e744925a.png)
 Then, copy the link and open in browser to login
+
 ![image](https://user-images.githubusercontent.com/81457132/184544349-8fdea432-0456-491b-8875-ad600259efaf.png)
+
 ![image](https://user-images.githubusercontent.com/81457132/184544375-4bd67a28-b337-42d4-9f43-c32e5051bff2.png)
 
 2. To Show the all To-Do List added
