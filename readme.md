@@ -27,10 +27,11 @@ curl -k https://127.0.0.1:5000/login/github
 ```
 ![image](https://user-images.githubusercontent.com/81457132/184542033-927b39bc-7c48-40e6-b74f-7988e744925a.png)
 Then, copy the link and open in browser to login
+![image](https://user-images.githubusercontent.com/81457132/184542712-314e660a-bae1-4560-b59c-edbc9f60d07d.png)
 
 
 
-2. To show the to-do list added
+2. To Show the all To-Do List added
 ```bash
 curl -k https://127.0.0.1:5000/list_all
 ```
@@ -38,7 +39,7 @@ Example output:
 ![image](https://user-images.githubusercontent.com/81457132/184542378-df52ede2-63d8-446f-b84f-931832cc07d9.png)
 
 
-3. To add new to-do list
+3. To Add New To-Do List
 ```bash
 curl -k -H "Content-Type: application/json" -X POST -d "{\"title\":\"Read a book\", \"description\":\"Read a book on Monday\", \"status\":\"not complete\"  }" https://127.0.0.1:5000/add_to_do_list
 ```
@@ -46,7 +47,7 @@ Example output:
 ![image](https://user-images.githubusercontent.com/81457132/184542427-b59db58f-bcbd-4e78-88e0-6783bba727ce.png)
 
 
-4. To delete a to-do list
+4. To Delete a To-Do List
 ```bash
 curl -k -H "Content-Type: application/json" -X POST -d "{\"id\":\"3\"}" https://127.0.0.1:5000/delete_list
 ```
@@ -54,7 +55,7 @@ Example output:
 ![image](https://user-images.githubusercontent.com/81457132/184542466-5631df10-eb9b-4198-b49f-ba6ddb0caa22.png)
 
 
-5. To mark a to-do list done
+5. To Mark a To-Do List Complete
 ```bash
 curl -k -H "Content-Type: application/json" -X POST -d "{\"id\":\"3\" ,\"status\":\"done\"}" https://127.0.0.1:5000/mark_list_done
 ```
