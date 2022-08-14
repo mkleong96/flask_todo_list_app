@@ -1,4 +1,5 @@
 ## Instruction for building the app
+#Method One using Github Repository
 1. Clone this repository.
 ```bash
 # Clone this repo
@@ -18,6 +19,19 @@ pip install -r requirements.txt
 # Conda activate venv
 conda activate flask_env
 flask run --cert=adhoc #to make sure the app running using https protocol
+```
+
+#Method Two using Docker
+1. Clone this repository.
+```bash
+# Clone this repo
+git clone https://github.com/mkleong96/flask_todo_list_app
+cd flask_todo_list_app
+```
+
+2. Build using Docker Compose
+```bash
+docker-compose up
 ```
 
 ## Instruction for running the app
