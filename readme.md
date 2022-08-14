@@ -35,6 +35,8 @@ cd flask_todo_list_app
 ```bash
 docker-compose up
 ```
+![image](https://user-images.githubusercontent.com/81457132/184544779-eb946b46-638a-4e7d-af22-df528c0b159a.png)
+
 
 ## Instruction for running the app
 1. To login to the app
