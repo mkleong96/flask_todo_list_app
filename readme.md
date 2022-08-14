@@ -26,7 +26,7 @@ flask run --cert=adhoc #to make sure the app running using https protocol
 curl -k https://127.0.0.1:5000/login/github
 ```
 ![image](https://user-images.githubusercontent.com/81457132/184542033-927b39bc-7c48-40e6-b74f-7988e744925a.png)
-Then, copy the link and open the Github sign in page to login
+Then, copy the link and open in browser to login
 
 
 
