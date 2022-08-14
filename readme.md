@@ -8,16 +8,16 @@ cd flask_todo_list_app
 
 2. Create virtual environment and install dependencies.
 ```bash
-$ # Conda create venv
-$ conda create --name flask_env python=3.9.7
-$ pip install -r requirements.txt
+# Conda create venv
+conda create --name flask_env python=3.9.7
+pip install -r requirements.txt
 ```
 
 3. Activate venv and run the server.
 ```bash
-$ # Conda activate venv
-$ conda activate flask_env
-$ flask run --cert=adhoc #to make sure the app running using https protocol
+# Conda activate venv
+conda activate flask_env
+flask run --cert=adhoc #to make sure the app running using https protocol
 ```
 
 ## Instruction for running the app
@@ -35,12 +35,17 @@ curl -k https://127.0.0.1:5000/list_all
 ```
 
 3. To add new to-do list
+```bash
 curl -k -i -H "Content-Type: application/json" -X POST -d "{\"title\":\"Read a book\", \"description\":\"Read a book on Monday\", \"status\":\"not complete\"  }" https://127.0.0.1:5000/add_to_do_list
+```
 
-#To delete a to-do list
+4. To delete a to-do list
+```bash
 curl -k -H "Content-Type: application/json" -X POST -d "{\"id\":\"3\"}" https://127.0.0.1:5000/delete_list
+```
 
-#To mark a to-do list done
+5. To mark a to-do list done
+```bash
 curl -k -H "Content-Type: application/json" -X POST -d "{\"id\":\"3\" ,\"status\":\"done\"}" https://127.0.0.1:5000/mark_list_done
+```
 
-flask run --cert=adhoc
