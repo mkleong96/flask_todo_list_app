@@ -90,4 +90,12 @@ Final list after adding/remove/update:
 3. API for list all To-Do-List.
 ![image](https://user-images.githubusercontent.com/81457132/184544477-ed0ab5c3-7ca0-4608-a109-c8d8dc4a4d8e.png)
 
+4. API for adding a new To-Do-List.
+![image](https://user-images.githubusercontent.com/81457132/184544495-61c7d9f4-fd62-4f13-8d38-837a8aba4002.png)
+
+5. API for delete a To-Do-List.
+![image](https://user-images.githubusercontent.com/81457132/184544506-043e8d72-274f-471d-a5a5-15c2fbed7f16.png)
+
+6. API for marking a To-Do-List complete.
+![image](https://user-images.githubusercontent.com/81457132/184544534-8129d661-6ea1-4023-8abb-59381c4eb561.png)
 
