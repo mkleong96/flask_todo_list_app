@@ -1,6 +1,24 @@
 ## Introduction for running the app
 1. Clone this repository.
-2. cd to the directory where run.py located.
+```bash
+$ # Clone this repo
+$ git clone https://github.com/mkleong96/flask_todo_list_app
+$ cd flask_todo_list_app
+```
+
+2. Create virtual environment and install dependencies.
+```bash
+$ # Conda create venv
+$ conda create --name flask_env python=3.9.7
+$ pip install -r requirements.txt
+```
+
+3. Activate environment and run the server.
+```bash
+$ # Conda activate venv
+$ conda activate flask_env
+$ flask run --cert=adhoc #to make sure the app running using https protocol
+```
 
 
 
