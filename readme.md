@@ -29,7 +29,9 @@ git clone https://github.com/mkleong96/flask_todo_list_app
 cd flask_todo_list_app
 ```
 
-2. Build using Docker Compose
+2. Import: Make sure Docker is running!
+
+2. Build using Docker Compose 
 ```bash
 docker-compose up
 ```
