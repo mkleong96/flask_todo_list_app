@@ -81,5 +81,13 @@ Final list after adding/remove/update:
 ![image](https://user-images.githubusercontent.com/81457132/184543110-85e67e86-65ad-46c7-b6d7-0d2d832e6e26.png)
 
 ## Interface documentation.
-1. 
+1. API for Login with GitHub Account.
+![image](https://user-images.githubusercontent.com/81457132/184544447-abd3306e-c4c7-4071-b4fd-f78c0121b0e6.png)
+
+2. API for checking authentication.
+![image](https://user-images.githubusercontent.com/81457132/184544465-5b01ec21-f662-47e6-b966-40f7ba00624c.png)
+
+3. API for list all To-Do-List.
+![image](https://user-images.githubusercontent.com/81457132/184544477-ed0ab5c3-7ca0-4608-a109-c8d8dc4a4d8e.png)
+
 
