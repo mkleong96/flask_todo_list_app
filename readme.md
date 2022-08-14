@@ -1,9 +1,9 @@
 ## Instruction for building the app
 1. Clone this repository.
 ```bash
-$ # Clone this repo
-$ git clone https://github.com/mkleong96/flask_todo_list_app
-$ cd flask_todo_list_app
+# Clone this repo
+git clone https://github.com/mkleong96/flask_todo_list_app
+cd flask_todo_list_app
 ```
 
 2. Create virtual environment and install dependencies.
