@@ -76,6 +76,9 @@ curl -k -H "Content-Type: application/json" -X POST -d "{\"id\":\"3\" ,\"status\
 Example output:
 ![image](https://user-images.githubusercontent.com/81457132/184542504-39a71b01-ff22-4a0a-99ce-19fccaf838e6.png)
 
+Final list after adding/remove/update:
+![image](https://user-images.githubusercontent.com/81457132/184543110-85e67e86-65ad-46c7-b6d7-0d2d832e6e26.png)
+
 ## Interface documentation.
 
 
