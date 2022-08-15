@@ -36,7 +36,7 @@ def homepage():
     
     if github.authorized:
         print(github.authorized)
-        social_account = github.get("/user").json()['html_url']
+        social_account = github.get("/user").json() #['html_url']
         provider       = 'Github' 
     return render_template("index.html", social_account=social_account, provider=provider)
 
