@@ -24,17 +24,22 @@ flask run --cert=adhoc #to make sure the app running using https protocol
 #Method Two using Docker
 1. Clone this repository.
 ```bash
-# Clone this repo
+# Clone this repo and cd to the directory
 git clone https://github.com/mkleong96/flask_todo_list_app
 cd flask_todo_list_app
 ```
 
-2. Import: Make sure Docker is running!
+2. Important: Make sure Docker is running!
 
-2. Build using Docker Compose 
+3. Build using Docker-Compose 
+```bash
+docker-compose build
+```
+4. Run the app using Docker-Compose Up
 ```bash
 docker-compose up
 ```
+
 ![image](https://user-images.githubusercontent.com/81457132/184544779-eb946b46-638a-4e7d-af22-df528c0b159a.png)
 
 
@@ -48,7 +53,7 @@ Then, copy the link and open in browser to login
 
 ![image](https://user-images.githubusercontent.com/81457132/184544349-8fdea432-0456-491b-8875-ad600259efaf.png)
 
-![image](https://user-images.githubusercontent.com/81457132/184560423-538a0050-a31d-4480-a50f-d76e4cd3137e.png)
+![image](https://user-images.githubusercontent.com/81457132/184561985-fe46affc-1420-4d7a-98fd-0ed6bbd59a02.png)
 
 
 2. To Show the all To-Do List added
