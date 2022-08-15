@@ -48,7 +48,8 @@ Then, copy the link and open in browser to login
 
 ![image](https://user-images.githubusercontent.com/81457132/184544349-8fdea432-0456-491b-8875-ad600259efaf.png)
 
-![image](https://user-images.githubusercontent.com/81457132/184544375-4bd67a28-b337-42d4-9f43-c32e5051bff2.png)
+![image](https://user-images.githubusercontent.com/81457132/184560423-538a0050-a31d-4480-a50f-d76e4cd3137e.png)
+
 
 2. To Show the all To-Do List added
 ```bash
