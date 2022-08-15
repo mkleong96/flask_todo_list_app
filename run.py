@@ -61,7 +61,9 @@ def list_all():
     statement = "SELECT * from to_do_list"
     cursor.execute(statement)
     output = cursor.fetchall()
-    return str(output)
+    # return str(output)
+    data = list(output)
+    return render_template("show_list.html", output=data)
 
 @app.route("/add_to_do_list", methods = ['POST'])
 def add_list():
