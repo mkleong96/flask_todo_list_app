@@ -16,7 +16,9 @@
           OAuth Provider: {{ provider }}
         </h4>
       <br />
+      <a href="https://127.0.0.1:5000/list_all" class="btn btn-primary">Show To-Do List</a>
       <a href="{{url_for('logout')}}" class="btn btn-danger">Logout</a>
+      
     
     {% else %}
 
@@ -31,5 +33,6 @@
     {% endif %}
 
   </div>
+
 
 {% endblock content %}
