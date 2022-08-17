@@ -8,4 +8,4 @@ def test_new_user():
     THEN check the email, hashed_password, and role fields are defined correctly
     """
     user = User()
-    assert user.username != 'FlaskIsAwesome'
+    assert user.username != 'test_username'
