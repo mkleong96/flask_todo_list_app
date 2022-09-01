@@ -81,8 +81,8 @@ def delete_list():
     id = request.json['id']
     conn_db = sqlite3.connect('users.db')
     cursor = conn_db.cursor()
-    sql_update_query = """DELETE FROM to_do_list WHERE id = ?"""
-    cursor.execute(sql_update_query, (id,))
+    sql_update_query = "DELETE FROM to_do_list WHERE id = ?"
+    cursor.execute(sql_update_query, (id))
     conn_db.commit()
     return "To do list deleted"
 
@@ -92,7 +92,7 @@ def mark_list_done():
     status = request.json['status']
     conn_db = sqlite3.connect('users.db')
     cursor = conn_db.cursor()
-    sql_update_query = """UPDATE to_do_list SET complete_status =? WHERE id = ?"""
+    sql_update_query = "UPDATE to_do_list SET complete_status =? WHERE id = ?"
     data = (status, id)
     cursor.execute(sql_update_query, data)
     conn_db.commit()
