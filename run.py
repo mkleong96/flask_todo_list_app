@@ -16,8 +16,13 @@ app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///./users.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.secret_key = 'OOC1L7kTpayyulSxyuwnKA'
 app.register_blueprint(github_blueprint, url_prefix="/login")
+UPLOAD_FOLDER = './upload'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+
 db.init_app(app)
 login_manager.init_app(app)
+
 
 with app.app_context():
     db.create_all()
@@ -35,7 +40,6 @@ def homepage():
     social_account = None
     
     if github.authorized:
-        print(github.authorized)
         social_account = github.get("/user").json() #['html_url']
         provider       = 'Github' 
     return render_template("index.html", social_account=social_account, provider=provider)
@@ -61,9 +65,9 @@ def list_all():
     statement = "SELECT * from to_do_list"
     cursor.execute(statement)
     output = cursor.fetchall()
-    # return str(output)
     data = list(output)
     return render_template("show_list.html", output=data)
+
 
 @app.route("/add_to_do_list", methods = ['POST'])
 def add_list():
@@ -97,6 +101,18 @@ def mark_list_done():
     cursor.execute(sql_update_query, data)
     conn_db.commit()
     return "To do list updated"
+
+@app.route("/add_img", methods = ['POST'])
+def add_img(): 
+    if 'file' not in request.files:
+        return 'there is no file in form!'
+    file = request.files['file']
+    path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+    file.save(path)
+    return 'Image Uploaded'
+
+
+
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')

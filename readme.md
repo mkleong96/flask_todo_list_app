@@ -87,6 +87,11 @@ curl -k -H "Content-Type: application/json" -X POST -d "{\"id\":\"3\" ,\"status\
 Example output:
 ![image](https://user-images.githubusercontent.com/81457132/184542504-39a71b01-ff22-4a0a-99ce-19fccaf838e6.png)
 
+6. To upload a Image
+```bash
+curl -k -F file=@/filepath/ https://127.0.0.1:5000/add_img
+```
+
 Final list after adding/remove/update:
 ![image](https://user-images.githubusercontent.com/81457132/184543110-85e67e86-65ad-46c7-b6d7-0d2d832e6e26.png)
 
@@ -114,4 +119,5 @@ Final list after adding/remove/update:
 6. API for marking a To-Do-List complete.
 
 ![image](https://user-images.githubusercontent.com/81457132/184544534-8129d661-6ea1-4023-8abb-59381c4eb561.png)
+
 
